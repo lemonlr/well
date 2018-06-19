@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>输入一个范围1-9的数字n</h1>
+
+
+
+<input id="demo" type="text">
+
+
+<script>
+function myFunction(){
+var x=document.getElementById("demo").value;
+document.write('<table border="1" cellpadding="5" cellspacing="0">');
+ for(var i=1;i<=x;i++){
+ document.write('<tr>');
+  for(var j=1;j<=x;j++){
+  document.write('<td>'+i+'x'+j+'='+(i*j)+'</td>');
+  }
+ document.write('</tr>');
+ }
+ document.write('</table>');}
+</script>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+
+</body>
+</html>
